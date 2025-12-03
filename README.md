@@ -126,4 +126,4 @@ This project demonstrates comprehensive Kiro integration:
 
 ## License
 
-Private Project
+MIT License
