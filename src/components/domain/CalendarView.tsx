@@ -52,7 +52,7 @@ export default function CalendarView({
   }, [])
 
   return (
-    <div className="flex-1 overflow-auto">
+    <div className="flex-1 overflow-auto scrollbar-hide">
       <div className="min-w-[800px]">
         {/* Header Row */}
         <div className="grid sticky top-0 bg-white z-10 border-b-2 border-gray-300" style={{ gridTemplateColumns: '64px repeat(7, 1fr)' }}>
