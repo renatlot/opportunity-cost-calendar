@@ -1,0 +1,12 @@
+{
+  "name": "Test Store Changes",
+  "description": "Suggests testing data persistence when store files are modified",
+  "trigger": {
+    "type": "onSave",
+    "filePattern": "src/store/**/*.ts"
+  },
+  "action": {
+    "type": "message",
+    "message": "🧪 Store modified! Remember to:\n1. Test data persistence (refresh browser)\n2. Verify localStorage updates\n3. Check that computed values recalculate correctly"
+  }
+}

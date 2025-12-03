@@ -1,0 +1,12 @@
+{
+  "name": "Update Documentation",
+  "description": "Reminds to update documentation when new components are added",
+  "trigger": {
+    "type": "onSave",
+    "filePattern": "src/components/**/*.tsx"
+  },
+  "action": {
+    "type": "message",
+    "message": "📝 Reminder: If this is a new component, consider updating the PROJECT_STRUCTURE.md and adding usage examples to README.md"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Production Build Check",
+  "description": "Builds the project for production and reports any errors",
+  "trigger": {
+    "type": "manual"
+  },
+  "action": {
+    "type": "command",
+    "command": "powershell -ExecutionPolicy Bypass -File build.ps1",
+    "successMessage": "✅ Production build successful! Ready to deploy.",
+    "errorMessage": "❌ Build failed. Check the errors above."
+  }
+}

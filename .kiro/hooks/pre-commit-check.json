@@ -1,0 +1,13 @@
+{
+  "name": "Pre-Commit Quality Check",
+  "description": "Runs TypeScript and ESLint checks before committing code",
+  "trigger": {
+    "type": "manual"
+  },
+  "action": {
+    "type": "command",
+    "command": "powershell -ExecutionPolicy Bypass -File build.ps1",
+    "successMessage": "✅ All checks passed! Safe to commit.",
+    "errorMessage": "❌ Quality checks failed. Please fix errors before committing."
+  }
+}

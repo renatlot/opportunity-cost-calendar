@@ -1,0 +1,12 @@
+{
+  "name": "Start Development Server",
+  "description": "Starts the Vite development server on port 5173",
+  "trigger": {
+    "type": "manual"
+  },
+  "action": {
+    "type": "command",
+    "command": "powershell -ExecutionPolicy Bypass -File dev.ps1",
+    "successMessage": "🚀 Development server started at http://localhost:5173"
+  }
+}
